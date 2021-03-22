@@ -85,9 +85,9 @@ function sass() {
 
 // Copy and compress images
 function images() {
-  return gulp.src(['src/assets/img/**/*', '!src/assets/img/archive/**/*'])
+  return gulp.src(['!src/assets/img/**/*', 'src/assets/img/archive/**/*'])
     .pipe($.imagemin())
-    .pipe(gulp.dest('./dist/assets/img'));
+    .pipe(gulp.dest('./dist/assets/img/archive'));
 }
 
 // Inline CSS and minify HTML

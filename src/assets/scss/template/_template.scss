@@ -352,6 +352,13 @@ table.button.twitter.icon-btn.tiny.radius,
 table.button.ok.icon-btn.tiny.radius,
 table.button.telegram.icon-btn.tiny.radius{
   margin-right: 3px !important;
+  a{
+    padding: 0!important;
+  }
+}
+
+table.button.instagram.icon-btn.tiny.radius a{
+  padding: 0!important;
 }
 
 .dots{

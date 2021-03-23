@@ -14,8 +14,8 @@ html,
   background: #f3f3f3 !important;
 }
 
-span, p, h2, h3, h4, h5{
-  font-family: 'Open Sans', sans-serif !important;
+span, p, h2, h3, h4, h5, a{
+  font-family: 'Roboto', sans-serif !important;
 }
 
 h2, h3, h4, h5{
@@ -27,7 +27,7 @@ h2{
   color: $main-color;
 }
 p, span{
-  font-size: 15px;
+  font-size: 16px;
   line-height: 22px;
 }
 
@@ -106,28 +106,47 @@ table.button.go-website.radius{
   background-color: #00569C !important;
 }
 
-.navigation{
-  background: #00569C;
+.header-text{
+  vertical-align: middle;
+  p{
+    margin-bottom: 0 !important;
+  }
 }
 
-.navigation p{
-  color: #ffff;
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 22px;
-  width: 65%;
-  margin: 26px 15px; 
+.navigation{
+  .button.go-website.radius{
+    background-color: unset !important;
+    a{
+      padding: 12px 16px !important;
+    }
+    
+  }
+
+  th{
+    text-align: center !important;
+  }
+
+  p{
+    color: #ffff;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25px;
+    width: 65%;
+    margin: 26px 15px; 
+  }
+
+  p, .go-website{
+    display: inline-block;
+  }
 }
+
 .logo{
   text-align: center;
+  vertical-align: middle;
 }
 .logo img{
   display: block;
   margin: auto;
-  margin: 50px;
-}
-.navigation p, .go-website{
-  display: inline-block;
 }
 
 button.go-website{
@@ -145,8 +164,8 @@ p.main-text{
   text-align: center;
   font-style: italic;
   font-weight: 700;
-  font-size: 14px;
-  margin: 60px 40px !important;
+  font-size: 16px;
+  margin: 40px !important;
 }
 
 .suggestion-text{
@@ -157,8 +176,8 @@ p.main-text{
   }
   p, h5{
     line-height: 22px;
-    padding-left: 40px !important;
-    padding-right: 40px !important;
+    padding-left: 40px;
+    padding-right: 40px;
     text-align: justify;
   }
 
@@ -192,30 +211,31 @@ p.main-text{
     padding-left: 40px;
     margin-bottom: 0 !important;
   }
-  ul{
-    padding-left: 50px !important;
+    ul{
+      padding-left: 50px !important;
+      padding-right: 40px;
+    }
   }
-}
-li.list-item{
-  list-style: circle;
-}
-.icons{
-  width: 200px !important;
-  border: 2px solid $border-color;
-  img{
-    height: 68px;
-    width: auto;
-    margin: 20px auto 15px auto;
+  li.list-item{
+    list-style: circle;
   }
-  img.img-others{
-    height: 30px;
-    margin: 38px auto;
-  }
-  p{
-    font-size: 18px;
-    text-align: center;
-    padding: 0 15px !important;
-  }
+  .icons{
+    width: 200px !important;
+    border: 2px solid $border-color;
+    img{
+      height: 68px;
+      width: auto;
+      margin: 20px auto 15px auto;
+    }
+    img.img-others{
+      height: 30px;
+      margin: 38px auto;
+    }
+    p{
+      font-size: 18px;
+      text-align: center;
+      padding: 0 15px !important;
+    }
 }
 
 .spacer,
@@ -293,6 +313,10 @@ li.list-item{
         margin: 10px !important;
       }
     }
+
+    th{
+      text-align: center;
+    }
   }
   .footer-text{
     p{
@@ -315,6 +339,9 @@ li.list-item{
   a{
     background-color: $main-color;
   }
+  td{
+    background: unset !important;
+  }
 }
 
 table.button.facebook.icon-btn.tiny.radius,
@@ -324,7 +351,7 @@ table.button.google.icon-btn.tiny.radius,
 table.button.twitter.icon-btn.tiny.radius,
 table.button.ok.icon-btn.tiny.radius,
 table.button.telegram.icon-btn.tiny.radius{
-  margin-right: 5px !important;
+  margin-right: 3px !important;
 }
 
 .dots{
@@ -344,21 +371,66 @@ span.dots :hover{
 
 @media only screen and (max-width: 430px){
   .logo img{
-    margin: 65px !important;
+    margin: 45px auto !important;
   }
-    .navigation p{
-      width: 100% !important;
+
+  .header-text{
+    p{
       text-align: center !important;
-      margin-left: 0 !important;
-      margin-right: 0 !important;
+      line-height: 22px;
+    }
+    
+  }
+
+  .navigation p{
+    width: 100% !important;
+    text-align: center !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  table.button.go-website.radius{
+    margin: 34px 0 0 !important;
+  }
+
+  .suggestion-text{
+    h2{
+      text-align: center !important;
+    }
+    
+    h5{
+      padding-left: 10px !important;
+      padding-right: 10px !important;
     }
 
-    table.button.go-website.radius{
-      margin: 30px 73px !important;
+    p{
+      padding-left: 13px!important;
+      padding-right: 13px!important;
+      text-align: unset;
+      text-align: left;
     }
+  }
 
-    .footer .social-media .button img{
-      height: 12px !important;
-      width: 12px !important;
+  .advantage-text{
+    h2{
+      text-align: center !important;
     }
+  }
+
+  .advantage-list{
+    h2{
+      padding-left: 10px !important;
+      padding-right: 10px !important;
+      text-align: center !important;
+    }
+  }
+
+  .footer .social-media .button img{
+    height: 12px !important;
+    width: 12px !important;
+  }
+
+  span.dots{
+    padding-left: 10px !important;
+  }
 }

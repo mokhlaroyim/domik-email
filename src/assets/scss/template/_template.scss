@@ -233,6 +233,7 @@ p.main-text{
   }
   li.list-item{
     list-style: circle;
+    font-size: 15px;
   }
   .icons{
     width: 200px !important;
@@ -297,6 +298,7 @@ p.main-text{
     line-height: 25px;
     padding-inline-start: 0px !important;
     .li{
+      font-size: 15px;
       font-weight: 600;
       list-style: none;
     }
@@ -375,6 +377,10 @@ table.button.telegram.icon-btn.tiny.radius{
 
 table.button.instagram.icon-btn.tiny.radius a{
   padding: 0!important;
+}
+
+span.dots {
+  cursor: pointer;
 }
 
 .dots{

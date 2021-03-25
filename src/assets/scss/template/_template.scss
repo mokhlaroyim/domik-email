@@ -119,9 +119,11 @@ table.button.go-website.radius{
 
 table.button.tiny table td, table.button.tiny table a {
   padding: 4px !important;
+  
 }
 
 table.button table td a {
+  font-weight: unset;
   font-size: 15px;
 }
 

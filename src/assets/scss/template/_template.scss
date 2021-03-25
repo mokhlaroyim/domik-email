@@ -56,6 +56,16 @@ p, span{
   background: transparent;
 }
 
+.navbar{
+  background: $main-color;
+
+  tr th{
+    text-align: center;
+    color: #fff;
+    padding: 13px 0;
+  }
+}
+
 // Social Media
 table.button.facebook table td {
   background: #3B5998 !important;
@@ -106,10 +116,15 @@ table.button.go-website.radius{
   background-color: #00569C !important;
 }
 
+table.button.tiny table td, table.button.tiny table a {
+  padding: 4px !important;
+}
+
 .header-text{
   vertical-align: middle;
   p{
     margin-bottom: 0 !important;
+    font-size: 15px;
   }
 }
 
@@ -163,8 +178,8 @@ button.go-website{
 p.main-text{
   text-align: center;
   font-style: italic;
-  font-weight: 700;
-  font-size: 16px;
+  font-weight: 600;
+  font-size: 15px;
   margin: 40px !important;
 }
 
@@ -327,6 +342,7 @@ p.main-text{
     }
     p.pt{
       padding-top: 20px !important;
+      padding-bottom: 20px !important;
     }
     p:first-of-type{
       margin: 30px auto 0 !important;
@@ -351,7 +367,7 @@ table.button.google.icon-btn.tiny.radius,
 table.button.twitter.icon-btn.tiny.radius,
 table.button.ok.icon-btn.tiny.radius,
 table.button.telegram.icon-btn.tiny.radius{
-  margin-right: 3px !important;
+  margin-right: 0px !important;
   a{
     padding: 0!important;
   }
@@ -389,6 +405,15 @@ span.dots :hover{
     
   }
 
+  .navbar{
+    margin-top: 34px;
+    margin-bottom: 40px;
+    
+    th.columns{
+      border-bottom: 1px solid;
+      
+    }
+  }
   .navigation p{
     width: 100% !important;
     text-align: center !important;
@@ -399,7 +424,7 @@ span.dots :hover{
   table.button.go-website.radius{
     margin: 34px 0 0 !important;
   }
-
+  
   .suggestion-text{
     h2{
       text-align: center !important;

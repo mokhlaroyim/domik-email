@@ -14,7 +14,7 @@ html,
   background: #f3f3f3 !important;
 }
 
-span, p, h2, h3, h4, h5, a{
+body, table.body, span, a, h1, h2, h3, h4, h5, h6, p, td, th{
   font-family: 'Roboto', sans-serif !important;
 }
 
@@ -60,6 +60,7 @@ p, span{
   background: $main-color;
 
   tr th{
+    font-size: 14px;
     text-align: center;
     color: #fff;
     padding: 13px 0;
@@ -118,6 +119,10 @@ table.button.go-website.radius{
 
 table.button.tiny table td, table.button.tiny table a {
   padding: 4px !important;
+}
+
+table.button table td a {
+  font-size: 15px;
 }
 
 .header-text{
